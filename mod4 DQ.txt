@@ -1,0 +1,2271 @@
+DAY! 
+----------------------
+Q. Which of the given options are implementation of BeanFactory? 
+
+
+ 
+ 1). XMLBeanFactory 
+
+ 2). DefaultListableBeanFactory 
+
+ 3). JNDIBeanFactory 
+
+ 4). StaticBeanFactory 
+ 
+Solution :
+option  [1,2]  are correct
+
+
+Q. <bean id="currencyConverter" class="training.Spring.CurrencyConverterImpl">
+  <property name="exchangeRate" value="44.50" /></bean>
+ Which type of dependency injection is used in above code? 
+ 
+
+ 
+ 1). Setter Injection 
+
+ 2). Constructor Injection 
+
+ 3). Interface Injection 
+
+ 4). No dependency injection is used 
+ 
+Solution :
+option  [1]  is correct 
+
+
+Q. <bean id="datasource" class="com.spring.ConnectionDataSource">
+  <property name="url"><value>${url}</value></property>
+  <property name="driver"><value>${driver}</value></property>
+  <property name="username"><value>${username}</value></property>
+  <property name="password"><value>${password}</value></property>
+ </bean>
+
+ <bean id="placeHolderConfig" 
+ class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+  <property name="_______"><value>_________</value></property>
+ </bean>
+
+ What must go into the blanks?
+ 
+
+
+ 
+ 1). '1-base 2-properties 
+
+ 2). 1-location 2-properties file name 
+
+ 3). '1-resource 2-properties file name 
+
+ 4). 1-location 2-property 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which of the given statement is true about spring boot? 
+
+
+ 
+ 1). Dynamically wires up beans 
+
+ 2). No requirement of XML configuration 
+
+ 3). Increases the size of build file 
+
+ 4). Increases the boiler plate code 
+ 
+Solution :
+option  [1,2]  are correct 
+
+
+Q. Look at the bean below. 
+
+ public class ExampleBean {
+
+     private int years;             
+     private String ultimateAnswer;
+
+     public ExampleBean(int years, String ultimateAnswer) {
+         this.years = years;
+         this.ultimateAnswer = ultimateAnswer;
+     }
+ }
+
+ What would be the value of index, to instantiate the bean using constructor injection?
+
+ <bean id="exampleBean" class="examples.ExampleBean">
+   <constructor-arg index="_____"><value>7500000</value></constructor-arg>
+   <constructor-arg index="_____"><value>42</value></constructor-arg>
+ </bean> 
+
+
+ 
+ 1). '0 and 1 
+
+ 2). '1 and 2 
+
+ 3). Start-index value does not matter 
+
+ 4). There is no attribute called index with the <constructor-arg> element 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. Which of the given below are the layers of Spring IO platform?  
+
+
+ 
+ 1). byName 
+
+ 2). byType 
+
+ 3). byId 
+
+ 4). autodetect 
+ 
+Solution :
+option  [3]  is correct 
+
+Q. Which of the given option represents loose coupling? 
+
+
+ 
+ 1). public class Person
+{
+ private Address address;
+public Person()
+{
+ this.address = new Address();
+}
+} 
+
+ 2). public class Person
+{
+ private Address address;
+public Person(Address address)
+{
+ this.address = address; 
+}
+} 
+
+ 3). Both 0 and 1  
+
+ 4). none of the above 
+ 
+Solution :
+option  [2]  is correct
+
+
+Q. Which element in the spring configuration file is used to tell the Spring container about a class and how it should be configured.             
+
+
+ 
+ 1). <bean> 
+
+ 2). <id> 
+
+ 3). <class> 
+
+ 4). <beans> 
+ 
+Solution :
+option  [1]  is correct 
+
+
+Q. Which of the given below are the layers of Spring IO platform?  
+
+
+ 
+ 1). Execution 
+
+ 2). Foundation 
+
+ 3). Co-ordination 
+
+ 4). All of the above 
+ 
+Solution :
+option  [4]  is correct 
+
+
+Q. Which implementation of 'Application Context' loads context definition from an XML file contained within a web application            
+
+
+ 
+ 1). ClassPathXmlApplicationContext 
+
+ 2). FileSystemXmlApplicationContext 
+
+ 3). XmlWebApplicationContext 
+
+ 4). none of the above 
+ 
+Solution :
+option  [3]  is correct 
+
+
+DAY@
+----------------------------------------------------
+
+Q. Which of the given options are implementation of DataSource? 
+
+
+ 
+ 1). BasicDataSource 
+
+ 2). ConnectionDataSource 
+
+ 3). DriverManagerDataSource 
+
+ 4). PoolingDataSource 
+ 
+Solution :
+option  [1,3,4]  are correct
+
+Q. SpEL's __________ operator gives access to static methods and constants on a given class            
+
+
+ 
+ 1). #{} 
+
+ 2). T() 
+
+ 3). Type 
+
+ 4). Ternary 
+ 
+Solution :
+option  [2]  is correct
+
+Q. How many ways you can configure EntityManagerFactory in Spring? 
+ 
+
+ 
+ 1). LocalEntityManagerFactoryBean 
+
+ 2). EntityManagerFactory lookup over JNDI 
+
+ 3). LocalContainerEntityManagerFactoryBean 
+
+ 4). All of the above  
+ 
+Solution :
+option  [4]  is correct
+
+Q. The projection operator in SpEL is:            
+
+
+ 
+ 1). .?[] 
+
+ 2). .![] 
+
+ 3). #{} 
+
+ 4). .#[] 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which of the given annotation is used to execute spring boot application? 
+
+
+ 
+ 1). @Configuraton 
+
+ 2). @EnableAutoConfiguration 
+
+ 3). @Resource 
+
+ 4). @Bean 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which of the given syntax is correct to get a unique instance of a bean each time it is asked for? 
+ 
+
+ 
+ 1). <bean id=“foo” class=“com.igate.Foo” scope=“prototype” />
+ 
+
+ 2). <bean id=“foo” class=“com.igate.Foo” scope=“singleton” />
+ 
+
+ 3). <bean id=“foo” class=“com.igate.Foo” scope=“request” />
+ 
+
+ 4). <bean id=“foo” class=“com.igate.Foo” scope=“session” />
+ 
+ 
+Solution :
+option  [1]  is correct 
+
+
+Q. Which of the given class is configured for internationalization? 
+
+
+ 
+ 1). CustomEditorConfigurer 
+
+ 2). PropertyPlaceHolderConfigurer 
+
+ 3). ResourceBundleMessageSource 
+
+ 4). AspectJWeaving 
+ 
+Solution :
+option  [3]  is correct 
+
+Q. Consider the following SpEL expression:
+
+ <property name=“smallCities" value="#{cities.?[population lt 100000]}"/> 
+
+ Which of the folloing statements are correct about this code?(Assume that cities is a list that exists)            
+
+
+ 
+ 1). This example uses a projection operator 
+
+ 2). This example uses a selection operator 
+
+ 3). It retrieves list of cities whose population is less than 100,000 
+
+ 4). The "smallCities" property will be wired with list of cities objects 
+ 
+Solution :
+option  [2,3,4]  are correct 
+
+Q. Given the code snippet below, which of the following statements are true?
+           @PersistenceContext
+     private EntityManager entityManager;
+      public void registerUser() {
+      User usr = new User(); // Line 1
+      usr.setName(“John”); // Line 2
+      entityManager.persist(usr); // Line 3
+    }           
+                                         Please choose all the answers that apply: 
+
+
+ 
+ 1). At line 1 the user instance is a managed Entity 
+
+ 2). At line 1 the user instance is a new Entity  
+
+ 3). At line 1 a new record will be inserted in the user table 
+
+ 4). At line 2 the entityManager will immediately reflect user name change to the database 
+
+ 5). At line 3 the entityManager will immediately reflect user name change to the database  
+ 
+Solution :
+option  [2,5]  are correct 
+
+
+Q. <util:list id="cities">
+     <bean class=“trg.spring.City"
+          p:name="Chicago" p:state="IL" p:population="2853114"/>
+     <bean class=" trg.spring.City"
+          p:name="Atlanta" p:state="GA" p:population="537958"/>
+      <bean class=" trg.spring.City"
+           p:name="Dallas" p:state="TX" p:population="1279910"/>
+      ……
+</util:list>
+ Which of the given statement is true about above code? 
+
+
+ 
+ 1). It will create a bean of type java.util.List that contains all of the values or beans that it contains. 
+
+ 2). util:list need to be replaced by list 
+
+ 3). p is the namespace used to set properties of beans 
+
+ 4). All of the above 
+ 
+Solution :
+option  [1,3]  are correct 
+
+DAY3
+--------------------------------------------------
+
+Q. Given the code snippet below, which of the following statements are true?
+    @PersistenceContext
+    private EntityManager entityManager;
+    public void updateUserProfile(Long usrId) {
+    User usr = entityManager.find(User.class,usrId); // Line 1
+    usr.setName(“john”); // Line 2
+    entityManager.merge(usr); // Line 3
+    entityManager.persist(usr); // Line 4
+    } 
+
+
+ 
+ 1). At line 1 the user instance is a managed Entity (t) 
+
+ 2). At line 1 the user instance is a detached Entity 
+
+ 3). At line 1 the find method will return null if the input userID is not found (t) 
+
+ 4). line 3 is mandatory to synchronize the changes done at line 2 to the database 
+
+ 5). ) line 4 is mandatory to synchronize the changes done at line 2 to the database 
+ 
+Solution :
+option  [2,5]  are correct 
+
+
+Q. Which DataSource matches the following description ?                                  
+
+ "You want to acquire the connection only once and hold on to it. 
+ You should call the destroy() method when you are done with database processing." 
+
+
+ 
+ 1). AbstractDataSource 
+
+ 2). SingleConnectionDataSource 
+
+ 3). BasicDataSource 
+
+ 4). DriverManagerDataSource 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Spring provides a class _____________ to
+ work with JPA specific transactions. 
+
+
+ 
+ 1). org.springframework.transaction.PlatformTransactionManager 
+
+ 2). org.springframework.orm.jpa.JpaTransactionManager 
+
+ 3). all of the above 
+
+ 4). none of the above 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Spring’s core transaction management abstraction is based on the interface? 
+ 
+
+ 
+ 1). PlatformTransaction 
+
+ 2). PlatformTransactionManager 
+
+ 3). TransactionManager 
+
+ 4). PlatformManager 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Classes annotated with __________ are identified as persistent classes by the annotatedClasses property of the AnnotationSessionFactoryBean.                                  
+ 
+
+ 
+ 1). @Persist 
+
+ 2). @Mapping 
+
+ 3). @Repository 
+
+ 4). @Entity 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. <bean id="sessionFactory"
+ class="___________________________">
+        <property name="dataSource" ref="dataSource" />
+        <property name="annotatedClasses" value="com.capgemini.entity" />
+        <property name="hibernateProperties">
+             <props>
+                    <prop key="dialect"> org.hibernate.dialect.Oracle9Dialect </prop>
+             </props>
+        </property>
+ </bean>
+
+ Assuming that the fully qualified class name is give, which of the following class could go into the blank? 
+
+
+ 
+ 1). LocalSessionFactoryBean 
+
+ 2). RemoteSessionFactoryBean 
+
+ 3). SessionFactoryBean 
+
+ 4). AnnotationSessionFactoryBean 
+ 
+Solution :
+option  [4]  is correct 
+
+
+Q. Container-managed and application-managed entity managers are associated with an EntityManagerFactory instance. 
+ 
+
+ 
+ 1). TRUE 
+
+ 2). FALSE 
+ 
+Solution :
+option  [1]  is correct
+
+Q. To use repository from Sping Data, create an interface to extend following interface 
+
+
+ 
+ 1). org.springframework.data.repository.Repository(T,ID extends Serializable> 
+
+ 2). org.springframework.data.repository.Repository(ID extends Serializable,T> 
+
+ 3). org.springframework.data.repository.Repository(<T >) 
+
+ 4). 4) none of the above. 
+ 
+Solution :
+option  [1]  is correct
+
+Q. How many ways you can acquire DataSource? 
+
+
+ 
+ 1). DriverManagerDataSource 
+
+ 2). JNDI Look upManagerDataSource 
+
+ 3). all of the above 
+ 
+Solution :
+option  [1,2]  are correct 
+
+Q. Classes annotated with the following annotations are scanned by Spring's
+ <context:component-scan>.
+
+ 1. @Controller
+ 2. @BeanComponent
+ 3. @Service
+ 4. @Component
+ 5. @Repository
+ 6. @Database  
+
+
+ 
+ 1). 1,2,4 
+
+ 2). 1,4 
+
+ 3). 1,4,5 
+
+ 4). 1,3,4,5 
+
+ 5). 1,4,5,6 
+ 
+Solution :
+option  [4]  is correct 
+DAY4
+----------------------------------------------------
+
+
+Q. Which statements about DispatcherServlet are true?                        
+
+
+ 
+ 1). It's a Model part of the MVC pattern implemented in Spring MVC. 
+
+ 2). It's a View part of the MVC pattern implemented in Spring MVC. 
+
+ 3). It's a Controller part of the MVC pattern implemented in Spring MVC. 
+
+ 4). It's an example of the Intercepting Filter pattern implementation. 
+ 
+Solution :
+option  [3]  is correct 
+
+Q. @Controller is a specialization of the @Component annotation.            
+
+
+ 
+ 1). TRUE 
+
+ 2). FALSE 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. Given the code snippet below:
+ @Controller
+ public class MyClass {
+     public ModelAndView _____________(HttpServletRequest request, HttpServletResponse response) 
+     throws ServletException, IOException  {
+            String now = new java.util.Date().toString();
+             return new ModelAndView("hello","now",now);
+        }  
+ }
+
+ What should be the method name?                            
+
+ 
+ 
+ 1). controlRequest 
+
+ 2). handle 
+
+ 3). only handleRequest 
+
+ 4). any user defined method 
+ 
+Solution :
+option  [4]  is correct 
+
+
+Q. The request has already reached the DispatcherServlet. Given the snippet from the xml file, 
+ which component will handle the request next? 
+
+ <beans> 
+     <!-- basicspringController implements Controller -->
+     <bean id="basicspringController" class="training.web.spring.BasicSpringController" >
+            <!-- some properties -->
+     </bean>
+     <bean id="beanMapping" class="org.springframework.web.servlet.handler.BeanUrlHandlerMapping">
+           <!-- some properties -->
+     </bean>
+     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+           <!-- some properties -->
+     </bean>
+     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+            <!-- some properties -->
+      </bean>
+ </beans> 
+ 
+
+ 
+ 1). basicspringController 
+
+ 2). beanMapping 
+
+ 3). viewResolver 
+
+ 4). messageSource 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Where do you expect to find the servlet specific Spring config to the "example" 
+ servlet in the web.xml below?
+
+ <servlet>
+     <servlet-name>example</servlet-name>
+     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+     <load-on-startup>1</load-on-startup>
+ </servlet> 
+ 
+
+ 
+ 1). /WEB-INF/example-servlet.xml 
+
+ 2). /WEB-INF/servlet-config.xml 
+
+ 3). /WEB-INF/default-config.xml 
+
+ 4). /WEB-INF/example-servlet-config.xml 
+ 
+Solution :
+option  [1]  is correct
+
+Q. You want to write a JPA Entity class to model a databank table named COOPERATE_USER. Each user is
+ uniquely identified in this table by his or her social security number SSN.
+ Along with SSN the system keeps username, job, address and birth date.
+
+ How to declare such JPA Entity class?
+
+   Please choose all the answers that apply: 
+
+
+ 
+ 1). Write a CooperateUser public class 
+
+ 2). Annotate the CooperateUser class with @Table(name=” COOPERATE_USER”) 
+
+ 3). Annotate the CooperateUser class with @Entity 
+
+ 4). The CooperateUser class must implement Serializable  
+
+ 5). Define private attributes ssn, job, name, addess and birthdate 
+ 
+Solution :
+option  [1,2,3,4]  are correct 
+
+Q. JpaRepository is a child inteface of following? 
+ 
+
+ 
+ 1). CrudRepository<T,ID>, 
+
+ 2). PagingAndSortingRepository<T,ID>, 
+
+ 3). QueryByExampleExecutor<T>, 
+
+ 4). Repository<T,ID> 
+
+ 5). all of the above. 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. The DispatcherServlet is an implementation of what design pattern? 
+ 
+
+ 
+ 1). Controller 
+
+ 2). Template 
+
+ 3). Front Controller 
+
+ 4). Interceptor 
+ 
+Solution :
+option  [3]  is correct
+
+Q. When Spring (MVC) is used in a web-aware way 3 additional scopes 
+	become available to bind beans to, these are?                                                                                                                             
+
+
+ 
+ 1). request 
+
+ 2). singleton 
+
+ 3). session 
+
+ 4). prototype 
+
+ 5). global-session 
+ 
+Solution :
+option  [1,3,5]  are correct 
+
+
+Q. Which of the following correctly describe the modules of the Spring architecture? 
+
+
+ 
+ 1). The Context module provides a Web-based framework for integrating Spring’s 
+	IoC and DI containers through the J2EE Servlet API 
+
+ 2). The Web module provide transaction management for data access 
+	business logic, utilizing AOP to inject transaction logic into domain functionality 
+
+ 3). The inversion of Control(IOC) and dependency Injection (DI) contains
+ , as well as fundamental parts of the Spring framework,
+ are provided by the core and Beans modules. 
+
+ 4). The transaction modules provides and AOP framework 
+to utilize proxies to transparently inject any desired business logic 
+into domain functionality. 
+
+ 5). . The Aspect-Oriented Programming(AOP) modules builds on the Core 
+and Business modules to provide the ApplicationContext infrastructure, 
+allowing access to object in a framework style 
+ 
+Solution :
+option  [2,3,4]  are correct 
+
+DAY 5
+--------------------------------------
+
+Q. __________ manages a TestContext.                      
+
+
+ 
+ 1). ContextManager 
+
+ 2). TestContextManager 
+
+ 3). TestExecutionListener 
+
+ 4). TestContextClass 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. In Spring MVC, the _____________  tag can render field validation errors. 
+
+
+ 
+ 1). <sf:fieldErrors> 
+
+ 2). <sf:errors> 
+
+ 3). <sf:error> 
+
+ 4). <sf:errorMessages> 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. You want to write a JPA Entity class to model a databank table named COOPERATE_USER.
+ Each user is  uniquely identified in this table by his or her social security number SSN. 
+Along with SSN the system keeps username, job, address and birth date.
+
+ How to declare such JPA Entity class?
+
+ Please choose all the answers that apply 
+
+
+ 
+ 1). Write a CooperateUser public class 
+
+ 2). Annotate the CooperateUser class with @Table(name=” COOPERATE_USER”) 
+
+ 3). Annotate the CooperateUser class with @Entity 
+
+ 4). Define private attributes ssn, job, name, addess and birthdate 
+
+ 5). Annotate the ' name' attibute with @Id 
+
+ 6). The CooperateUser class must implement Serializable  
+ 
+Solution :
+option  [1,2,3,6]  are correct 
+
+Q. Given the code snippet below, which of the following statements are true?
+           @PersistenceContext
+     private EntityManager entityManager;
+      public void registerUser() {
+      User usr = new User(); // Line 1
+      usr.setName(“John”); // Line 2
+      entityManager.persist(usr); // Line 3
+    }           
+ Please choose all the answers that apply: 
+
+
+ 
+ 1). At line 1 the user instance is a managed Entity 
+
+ 2). At line 1 the user instance is a new Entity  
+
+ 3). At line 1 a new record will be inserted in the user table 
+
+ 4). At line 2 the entityManager will immediately reflect user name change to  
+
+ 5). At line 3 the entityManager will immediately reflect user name change to  
+ 
+Solution :
+option  [2,5]  are correct 
+
+Q. How will you bring in the configuration metadata into a Spring testcase?                   
+
+
+ 
+ 1). @TransactionConfiguration  
+
+ 2). @ContextConfiguration  
+
+ 3). @RunWith 
+
+ 4). @ContextMetadata 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. To figure out which controller should handle the request,
+ DispatcherServlet queries ___________ . 
+
+
+ 
+ 1). HandlerMappings 
+
+ 2). ModelAndView  
+
+ 3). ViewResolver 
+
+ 4). RequestHandler 
+ 
+Solution :
+option  [1]  is correct 
+
+
+Q. Spring's ___________ sends out requests to controllers. 
+
+
+ 
+ 1). ActionServlet 
+
+ 2). ControllerServlet 
+
+ 3). DispatcherServlet 
+
+ 4). FilterDispatcher 
+ 
+Solution :
+option  [3]  is correct 
+
+Q. Consider the code snippet below for addUser.jsp in a MVC web-application:
+
+ <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
+ <h2>Create a User</h2>
+ <sf:form method="GET" modelAttribute="user" action="ProcessUser.obj" >
+….
+ <sf:input  _________="username" size="15" maxlength="15" />
+ .....
+
+ Most form elements from spring-form.tld have an attribute that is used to connect form 
+ input field with the corresponding field in the command object? Which is this element 
+ that must replace the blank?                                                                  
+
+
+ 
+ 1). commandPath 
+
+ 2). command 
+
+ 3). path 
+
+ 4). bind 
+ 
+Solution :
+option  [3]  is correct 
+
+Q. The Controller Interface's handleRequest() method returns a? 
+
+
+ 
+ 1). ModelAndView object 
+
+ 2). JSP page 
+
+ 3). View object 
+
+ 4). Form object 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. Look at a snippet from web.xml of a Spring MVC application:
+
+ <web-app>
+      <servlet>
+           <servlet-name>tradingapp</servlet-name>
+           <servlet-class> org.springframework.web.servlet.DispatcherServlet </servlet-class>
+      </servlet>
+      <servlet-mapping>
+           <servlet-name>tradingapp</servlet-name>
+           <url-pattern>*.htm</url-pattern>
+      </servlet-mapping>
+
+ What should be the name of the Spring configuration file for this application?            
+
+
+ 
+ 1). tradingapp.xml 
+
+ 2). spring-config.xml 
+
+ 3). tradingapp-servlet.xml 
+
+ 4). Any name is ok 
+ 
+Solution :
+option  [3]  is correct 
+
+jQuery  Day 1
+
+
+Q. Consider the following  code snippet  for jQuery selector:
+
+ $("div#intro .head"). 
+ What does it select? 
+ 
+
+
+ 
+ 1). All elements with class="head" inside the first div element 
+ with id="intro" 
+ 
+
+ 2). The first element with id="head" inside any div element with class="intro" 
+ 
+
+ 3). All div elements with id="intro" and all descendants of div
+  with class="head"  
+
+ 4). First element with id=“intro” or class=“head”  
+ 
+Solution :
+option  [3]  is correct 
+
+Q. Which of the following jQuery
+  method set the value of an element? 
+
+
+ 
+ 1). setContent( val ) 
+
+ 2). val( val ) 
+
+ 3). setValue( val ) 
+
+ 4).  None of the above. 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which jquery .js version file should be deployed to 
+ the production?  
+
+
+ 
+ 1). jquery-1.x.x.js  
+
+ 2).   jquery-1.x.x.min.js  
+
+ 3).  validation.js  
+
+ 4). required.js  
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which of the following  selectors select the
+ only textboxes? 
+ 
+
+ 
+ 1). $('text:')  
+
+ 2). $('#text')  
+
+ 3). $('.text')  
+
+ 4). $(':text')  
+ 
+Solution :
+option  [4]  is correct
+
+
+Q. Consider the following html code snippet.
+
+ <div id="mainDiv">
+   <p>Para-1</p>
+   <p>Para-2</p>
+   <p>Para-3</p>
+   <p>Para-4</p>
+ </div>
+
+ Which of the following will tell the number
+ of children of division tag? 
+
+
+ 
+ 1). ('#mainDiv').children.length 
+
+ 2). ('#mainDiv').children().length() 
+
+ 3). 
+ ('#mainDiv').children().length 
+
+ 4). ('#mainDiv').children.length() 
+ 
+Solution :
+option  [3]  is correct 
+
+
+Q. Which of the following will attach the
+ event handler for the click event of <div> tag? 
+ 
+
+ 
+ 1). $(document).ready(function() {
+             $('div').on('click', function( event ){
+                alert('Hi there!');
+             });
+          }); 
+
+ 2). $(document).ready(function() {
+             $('.div').on('click', function( event ){
+                alert('Hi there!');
+             });
+          }); 
+
+ 3). $(document).ready(function() {
+             $('div').on('click', function(  ){
+                alert('Hi there!');
+             });
+          }); 
+
+ 4). $(document).ready(function() {
+             $('.div').on('click', function(  ){
+                alert('Hi there!');
+             });
+          }); 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. Which of the following jQuery selector 
+ select elements whose css class is cg-class?
+ 
+ 
+
+ 
+ 1).  $('cg-class') 
+
+ 2).  $('#cg-class') 
+
+ 3).  $('.cg-class') 
+
+ 4). None of the above. 
+ 
+Solution :
+option  [3]  is correct 
+
+Q. Consider the following tag of html file.
+
+ <p cg-custom="Capgemini">P5</p> 
+ <input type="text"/>
+ <input type="text" disabled/>
+ <input type="radio" checked/>
+
+ Which of the following jQuery selector 
+ select the tag with  cg-custom attribute ? 
+ 
+
+ 
+ 1). $('(cg-custom)') 
+
+ 2). $('[cg-custom]') 
+
+ 3). $([cg-custom]) 
+
+ 4). $('{cg-custom}') 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. What is the correct jQuery code to set the 
+ background color of all p elements to red?  
+ 
+
+ 
+ 1). $("p").html("background-color","red");  
+
+ 2).  $("p").style("background-color","red");  
+
+ 3).   $("p").layout("background-color","red");  
+
+ 4).  $("p").css("background-color","red");  
+ 
+Solution :
+option  [4]  is correct 
+
+Q. Which of the following jQuery methods is used to change the value of a form element ? 
+
+
+ 
+ 1). value('newvalue') 
+
+ 2). text('newvalue') 
+
+ 3). val('newvalue') 
+
+ 4). txt('newvalue' 
+ 
+Solution :
+option  [3]  is correct 
+
+Web Services Day 1
+=====================
+
+Q. Match the following:
+
+ 1. ______Symbolizes to retrieve the resources
+ 2. ________Symbolizes to create a resource
+ 3. ________Symbolizes to delete a resource
+ 4. ________Symbolizes to modify a resource 
+
+
+ 
+ 1). 1. @PUT                        
+ 2. @POST                            
+ 3. @DELETE                                
+ 4. @GET   
+
+ 2). 1.  @GET                          
+ 2. @POST                            
+ 3. @DELETE                                
+ 4. @PUT 
+
+ 3). 1. @GET                          
+ 2. @PUT                        
+ 3. @DELETE                                
+ 4. @POST 
+
+ 4). 1. @POST                        
+ 2. @GET                          
+ 3. @DELETE                                
+ 4. @PUT 
+ 
+Solution :
+option  [2]  is correct 
+
+
+Q. State whether True or False:
+
+ Statement 1: '@Path annotaion can be used on class level in a POJO class
+ Statement 2: '@Path annotaion can be used on method level in a POJO class 
+
+
+ 
+ 1). Both statements are false 
+
+ 2). Only Statement 1 is true 
+
+ 3). Both statements are true 
+
+ 4). Both statements are contradicting with each other 
+ 
+Solution :
+option  [3]  is correct 
+
+
+Q. What does the following URL indicate ? 
+
+http://127.0.0.1:9876/cs 
+
+
+ 
+ 1). http: port 
+127.0.0.1: machine name where web service is published 
+9876: default listener port number for web services 
+cs : arbitary name for the web service 
+
+ 2). http: protocol 
+127.0.0.1: IP address of machine where web service is published 
+9876: port number 
+cs : arbitary name for the web service 
+
+ 3). http: IP address 
+127.0.0.1: protocol of machine where web service is published 
+9876: port number 
+cs : arbitary name for the web service 
+
+ 4). URL given is in incorrect format 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Select the most appropriate application area where a web service can be used: 
+
+
+ 
+ 1). An application area could be ordering a book from flipcart 
+
+ 2). An application area could be doing a payment transaction between Business to Business applications 
+
+ 3). An application area could be viewing a specific category of books from flipcart 
+
+ 4). All above 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. What does @WebService annotation indicate ? 
+ 
+
+ 
+ 1). @WebService is an annotation to pull a web service end point 
+
+ 2). @WebService annotation will be used to publish a web service 
+
+ 3). @WebService annotation will be used to consume a web service 
+
+ 4). @WebService annotation defines a web service end point 
+ 
+Solution :
+option  [4]  is correct
+
+
+Q. What is the <type> element implication in WSDL? 
+
+
+ 
+ 1). <type> defines the data-types of the elements whether simple or complex 
+
+ 2). <type> defines the data-types only for simple element 
+
+ 3). <type> defines the data-types only for complex element 
+
+ 4). There is no <type> element in WSDL 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. Why RESTful web services are easier to work with? 
+
+
+ 
+ 1). RESTful web services are easier to work with, as resources can be identified by URIs. 
+
+ 2). RESTful web services are easier to work with, as resources cannot be accessed via HTTP 
+
+ 3). RESTful web services are easier to work with, as resources can be accessed via SOAP 
+
+ 4). RESTful web services are easier to work with, as resources can be accessed 
+by user-defined messaging formats 
+ 
+Solution :
+option  [1]  is correct 
+
+
+Q. State whether True or False: 
+
+Statement 1: WSDL defines the structure of Web Services. 
+Statement 2: SOAP enables exchange of messages between web service provider and consumer. 
+
+
+ 
+ 1). Only Statement 2 is true 
+
+ 2). Both statements are false 
+
+ 3). Both statements are true 
+
+ 4). Only Statement 1 is true 
+ 
+Solution :
+option  [3]  is correct 
+
+
+Q. State whether True or False: 
+
+Statement 1: Web services support communication between various programming languages. 
+Statement 2: Web services are available anywhere and on any device. 
+
+
+ 
+ 1). Both statements are false 
+
+ 2). Both statements are true 
+
+ 3). Only Statement 1 is true 
+
+ 4). Only Statement 2 is true 
+ 
+Solution :
+option  [2]  is correct 
+
+
+Q. What is the use of @FormParam annotation? 
+
+
+ 
+ 1). Used to bind the URI to a Java method 
+
+ 2). Used to bind Java method return type with the response that would be generated 
+
+ 3). Used to bind Java method return type to HTML form parameters 
+
+ 4). Used to bind HTML form parameters value to a Java method parameters 
+ 
+Solution :
+option  [4]  is correct 
+
+JEE JPA with Hibernate DQ Day 1
+==================================
+
+Q. Select the correct statement? 
+
+
+ 
+ 1). JPA need ORM implementation to work 
+
+ 2). ORM framework that can use with JPA are TopLink,OpenJPA & Hibernate 
+
+ 3). JPA is database 
+
+ 4). All of Above 
+ 
+Solution :
+option  [1,2]  are correct 
+
+Q. In which of the Following persistence life cycle state the object is not yet
+ associated with an Entity Manager  
+
+
+ 
+ 1). Managed 
+
+ 2). New 
+
+ 3). Detached 
+
+ 4). Removed 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Choose the correct instance states of persistent class. 
+
+
+ 
+ 1). Managed 
+
+ 2). New 
+
+ 3). Detached 
+
+ 4). Removed 
+
+ 5). All of the above 
+ 
+Solution :
+option  [5]  is correct 
+
+Q. Select the correct statement for @Entity? 
+
+
+ 
+ 1). This Annotation marks the class as an entity bean 
+
+ 2). This Annotation marks the bean as primary key 
+
+ 3). Used to create SEQUENCE column type 
+
+ 4). All of Above 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. Which of the following are elements in persistence.xml 
+
+
+ 
+ 1). <persistence-unit>  
+
+ 2). <class>  
+
+ 3). <hibernate> 
+
+ 4). <opengl> 
+ 
+Solution :
+option  [1,2]  are correct 
+
+Q. What is the use of EntityManagerFactory class? 
+
+
+ 
+ 1). Designed to create EntityManager.  
+
+ 2). Designed to create Persistance.  
+
+ 3). Responsible for creating EntityManager instance. 
+	It is obtained using Persistence class's createEntityManagerFactory static method. 
+ 
+
+ 4). Designed to create Entity.  
+ 
+Solution :
+option  [1,3]  are correct 
+
+Q. State whether below given statements are true or false:
+
+ Statement 1-  The EntityManager is the primary interface used by application developers 
+		to interact with the JPA runtime. 
+
+ Statement 2 - EntityManagerFactory instance  manage entity objects which required to be 
+		persisted.  
+ 
+
+ 
+ 1). True , True 
+
+ 2). True , False 
+
+ 3). False , True 
+
+ 4). False , False 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. What are the advantages of JPA? Select the correct options. 
+ 
+
+ 
+ 1). Database independent. 
+
+ 2). Concurrency support. 
+
+ 3). Easy maintenance and increases productivity 
+
+ 4). All of Above 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. What is the use of  @Id@GeneratedValue(strategy = GenerationType.IDENTITY) 
+
+
+ 
+ 1). JPA decides which generator type to use, based on the database’s support 
+	for primary key generation. 
+
+ 2). The database is responsible for determining and assigning the next primary key.
+ 
+
+ 3). This type keeps a separate table with the primary key values.  
+
+ 4). All of Above 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. What is the use of "contains" EntityManager  method 
+
+
+ 
+ 1). Returns true if the entity instance is in the persistence context.
+ This signifies that the entity instance is managed
+ 
+
+ 2). Clears the entities from the persistence context
+ 
+
+ 3). Persists the entity object 
+
+ 4). Detaches an entity from the persistence context 
+ 
+Solution :
+option  [1]  is correct 
+
+JEE JPA with Hibernate DQ Day 2
+=====================================
+
+Q. What is true about the following code:
+
+ @OneToMany(mappedBy="department") 
+  public Collection<Employee> getEmployees() { 
+  return employee; 
+  }  
+
+
+ 
+ 1). Department has a field called “Employee”, that has a one-to-many relationship 
+
+ 2). Each “department” has one or more “Employee”
+  
+
+ 3). Each “Employee” has one or more “department”
+ 
+
+ 4). None of these 
+ 
+Solution :
+option  [1,2]  are correct 
+
+Q. @Entity
+ public class Employee ….. {
+  @Id
+  private int empId;
+  private String name;
+  @OneToOne
+  private Address address;
+ }
+
+ @Entity
+ public class Address ….. {
+  @Id
+  private int addressId;
+  private String street;
+  private String city;
+  private String state;
+  private String zipcode;}
+ Which of the given statement is true about above code?
+ 
+
+
+ 
+ 1). It represents unidirectional one-to-one relationship 
+
+ 2). It represents bidirectional one-to-one relationship 
+
+ 3). It represents bidirectional one-to-many relationship 
+
+ 4). None of these 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. State whether below given statements are true or false: 
+ Statement 1-            JPQL is a platform-independent object-oriented query language defined as part of the Java Persistence API (JPA) specification.
+
+ Statement 2 - JPQL works with relational database Table not java classes . 
+
+
+ 
+ 1). True    True 
+
+ 2). True    False 
+
+ 3). False   True 
+
+ 4). False    False 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which of the following entitymanager method is used to locate single entity only based on primary key value . 
+ 
+
+ 
+ 1). search() 
+
+ 2). locate() 
+
+ 3). flush() 
+
+ 4). find() 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. Query interface shoule be used in which of the following case as per JPA 2 recommendations? 
+ 
+
+ 
+ 1). When specific query result type is expected 
+
+ 2). When query result type is unknown 
+
+ 3). When query result contains more than one object 
+
+ 4). When query result contains only one object 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which of the given syntax is correct to use Named Queries? 
+ 
+
+ 
+ 1). @Entity
+ @Table(name = "books")
+ @NamedQueries(
+ @NamedQuery(name = "getAllBooks", query = "SELECT book FROM Book book"))
+ public class Book implements Serializable {  ………….. } 
+
+ 2). @Entity
+ @Table(name = "books")
+ @NamedQueries(
+ name = "getAllBooks", query = "SELECT book FROM Book book")
+ public class Book implements Serializable {  ………….. } 
+
+ 3). @Entity
+ @Table(name = "books")
+ @NamedQueries(
+ @NamedQuery(name = "getAllBooks", query = "SELECT book FROM Book book"))
+ public class Book {  ………….. } 
+
+ 4). @Entity
+ @Table(name = "books")
+ @NamedQuery(
+ @NamedQueries(name = "getAllBooks", query = "SELECT book FROM Book book"))
+ public class Book implements Serializable {  ………….. } 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. How can we represent the Many to Many Entity relationship in JPA? 
+ 
+
+ 
+ 1). javax.persistence.ManyToMany 
+
+ 2). javax.persistence.Entity 
+
+ 3). javax.persistence.Table 
+
+ 4). javax.hibernate.ManyToMany 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. Which of the below given strategies JAP allows for hierarchical classes to be mapped with tables? 
+ 
+
+ 
+ 1). InheritanceType.SINGLE_TABLE 
+
+ 2). InheritanceType.
+ TABLE_PER_CLASS 
+
+ 3). InheritanceType.JOINED 
+
+ 4). All of the above 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. ____________   interface shoule be used when the query result type is unknown or when a query returns polymorphic results . 
+ 
+
+ 
+ 1). TypedQuery 
+
+ 2). Query 
+
+ 3). EntityManager 
+
+ 4). Non of the above 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which of the given below are valid cascade types? 
+ 
+
+ 
+ 1). Detach 
+
+ 2). Merge 
+
+ 3). Insert 
+
+ 4). Remove 
+
+ 5). All 
+ 
+Solution :
+option  [1,2,4,5]  are correct 
+
+JEE Angular JS DQ Day 1
+================================
+
+Q. Which of the following is
+ the correct way of including
+ the contents of Welcome.html file
+ in angular js page? 
+
+
+ 
+ 1). 
+ <body ng-app="">
+ <div ng-include="'Welcome.html'"></div>
+ </body> 
+
+ 2). 
+ <body ng-app="">
+ <div ng-import="'Welcome.html'"></div>
+ </body> 
+
+ 3). 
+ <body >
+ <div ng-include="'Welcome.html'"></div>
+ </body> 
+
+ 4). 
+ <body >
+ <div ng-import="'Welcome.html'"></div>
+ </body> 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. Consider the following  code snippet for .
+ <script>
+ var app = angular.module("myShoppingList", []); 
+ app.controller("myCtrl", function($scope) {
+     $scope.products = ["Milk", "Bread", "Cheese"];
+ });
+ </script>
+
+ Which of the following is the correct 
+ way of putting the myCtrl controller model
+ product data in the bulleted list? 
+
+
+1). 
+ <div ng-app="myShoppingList" ng-controller="myCtrl">
+   <ul>
+     <li ng-repeat="products">{{products}}</li>
+   </ul>
+ </div>
+
+
+ 
+
+ 2). 
+ <div >
+   <ul>
+     <li ng-repeat="x in products">{{x}}</li>
+   </ul>
+ </div>
+
+
+ 
+
+ 3). 
+ <div ng-controller="myCtrl">
+   <ul>
+     <li ng-repeat="x in products">{{x}}</li>
+   </ul>
+ </div>
+
+
+ 
+
+ 4). 
+ <div ng-app="myShoppingList" ng-controller="myCtrl">
+   <ul>
+     <li ng-repeat="x in products">{{x}}</li>
+   </ul>
+ </div>
+
+
+ 
+ 
+Solution :
+option  [4]  is correct 
+
+
+
+Q. Which of the following directive
+ when placed on any DOM element marks
+ that element as the beginning of the $rootScope? 
+
+
+ 
+ 1). ng-model 
+
+ 2). ng-bind 
+
+ 3). ng-app 
+
+ 4). ng-init 
+ 
+Solution :
+option  [3]  is correct 
+
+
+Q. Which of the following feature of the Angular formats the value of an expression for display to the user? 
+
+
+ 
+ 1). Service 
+
+ 2). Module 
+
+ 3). Expression 
+
+ 4). Filter 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. Which of the following is   valid for
+ ng-init directive? 
+
+
+ 
+ 1). Initializes an AngularJS application. 
+
+ 2). Initializes application data. 
+
+ 3). Binds the value of HTML controls (input, select, textarea) to application data. 
+
+ 4). All of the above. 
+ 
+Solution :
+option  [2]  is correct 
+
+
+Q. Which of the following 
+ attribute tells Angular to replace
+  the text content of the specified HTML element 
+  with the value of a given expression and 
+  to update the text content when the value 
+  of that expression changes? 
+
+
+ 
+ 1). ng-model 
+
+ 2). ng-bind 
+
+ 3). ng-app 
+
+ 4). ng-init 
+ 
+Solution :
+option  [2]  is correct 
+
+
+Q. We  can think of a module as a container for the different parts of your app  like controllers, services, filters, directives, etc. 
+
+
+ 
+ 1). TRUE 
+
+ 2). FALSE 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Consider the following code snippet.
+  <div ng-app = "">
+          <p>Enter your Name: <input type = "text" ng-model = "name"></p>
+          <p>Hello <span ng-bind = "name"></span>!</p>
+       </div>
+ Which of the following directive will bind the model "name" with the view? 
+
+
+ 
+ 1). ng-app 
+
+ 2). ng-bind 
+
+ 3). ng-init 
+
+ 4). ng-controller 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. Which of the following  directive binds the value of HTML controls (input, select, textarea) to application data. 
+
+
+ 
+ 1). ng-model 
+
+ 2). ng-init 
+
+ 3). ng-config 
+
+ 4). ng-bind 
+ 
+Solution :
+option  [1]  is correct 
+
+Q. ___ in Angular apps is the automatic synchronization of data between the model and view components. 
+
+
+ 
+ 1). Data Filter 
+
+ 2). Data Controller 
+
+ 3). Data Binding 
+
+ 4). Data Service 
+ 
+Solution :
+option  [2]  is correct 
+
+JEE Angular JS DQ Day 2
+----------------------------------------
+
+
+Q. Which of the following is true about $routeProvider? 
+
+
+ 
+ 1).  $routeProvider is the key service which set the configuration of urls. 
+
+ 2). $routeProvider maps Urls with the corresponding html page or ng-template. 
+
+ 3). $routeProvider attaches a controller with the view. 
+
+ 4). All of the above. 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. Which of the following fuction we can use to create the service? 
+
+
+ 
+ 1). run 
+
+ 2). factory 
+
+ 3). service 
+
+ 4). config 
+ 
+Solution :
+option  [2,3]  are correct 
+
+Q. Which of the following is true about ng-disabled directive? 
+
+
+ 
+ 1). ng-disabled directive can enable a given control. 
+
+ 2). ng-disabled directive can disable a given control. 
+
+ 3). Both of the above 
+
+ 4). None of the above 
+ 
+Solution :
+option  [3]  is correct 
+
+Q. Which of the  following 
+ service allows you to retrieve the
+ current set of route parameters? 
+
+
+ 
+ 1).  $routeParam 
+
+ 2).  $routeService 
+
+ 3).  $route 
+
+ 4).  $routeParams 
+ 
+Solution :
+option  [4]  is correct 
+
+Q. The AngularJS       _________           service makes a request to the server,
+ and returns a response. 
+
+
+ 
+ 1). $injector 
+
+ 2). $timeout 
+
+ 3). $location 
+
+ 4). $http  
+ 
+Solution :
+option  [4]  is correct 
+
+Q. Consider the following code snippet
+ <script>
+ angular.module('myApp', []).
+ controller('namesCtrl', function($scope) {
+     $scope.names = [
+         {name:'Jani',country:'Norway'},
+         {name:'Carl',country:'Sweden'},
+         {name:'Margareth',country:'England'},
+         {name:'Hege',country:'Norway'},
+         {name:'Joe',country:'Denmark'}
+         ];
+     $scope.orderByMe = function(x) {
+         $scope.myOrderBy = x;
+     }
+ });
+ </script>
+ If we want to display the name and 
+ country in the tabular format
+ and sort them Which of the following 
+ is the correct way of doing it? 
+
+
+ 
+ 1). 
+ <div ng-app="myApp" ng-controller="namesCtrl">
+  <table border="1" width="100%">
+  <tr>
+   <th ng-click="orderByMe('name')">Name</th>
+   <th ng-click="orderByMe('country')">Country</th>
+  </tr>
+  <tr ng-repeat="x in names | orderBy">
+   <td>{{x.name}}</td>
+   <td>{{x.country}}</td>
+  </tr>
+  </table>
+ </div>
+
+
+
+ 
+
+ 2). 
+ <div ng-app="myApp" ng-controller="namesCtrl">
+  <table border="1" width="100%">
+  <tr>
+   <th ng-click="orderByMe('name')">Name</th>
+   <th ng-click="orderByMe('country')">Country</th>
+  </tr>
+  <tr ng-repeat="x   names | orderBy:myOrderBy">
+   <td>{{x.name}}</td>
+<td>{{x.country}}</td>
+  </tr>
+  </table>
+ </div>
+
+ 
+
+ 3). 
+ <div ng-app="myApp" ng-controller="namesCtrl">
+  <table border="1" width="100%">
+  <tr>
+   <th ng-click="orderByMe('name')">Name</th>
+   <th ng-click="orderByMe('country')">Country</th>
+  </tr>
+  <tr ng-repeat="x in names | orderBy:myOrderBy">
+   <td>{{x.name}}</td>
+   <td>{{x.country}}</td>
+  </tr>
+  </table>
+ </div>
+
+
+
+ 
+
+ 4). 
+ <div ng-app="myApp" ng-controller="namesCtrl">
+  <table border="1" width="100%">
+  <tr>
+   <th ng-click="orderBy('name')">Name</th>
+   <th ng-click="orderBy('country')">Country</th>
+  </tr>
+  <tr ng-repeat="x in names | orderBy:myOrderBy">
+   <td>{{x.name}}</td>
+   <td>{{x.country}}</td>
+  </tr>
+  </table>
+ </div>
+
+ 
+ 
+Solution :
+option  [3]  is correct 
+
+
+Q. Consider the following div tag which initialize the country.
+ <div ng-app = "" ng-init = "countries = [{locale:'en-US',name:'United States'},
+ {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]"> 
+ Which of the following is the correct way to print country name and
+ locale using angular directive? 
+ 
+
+ 
+ 1).   <ol>
+       <li ng-repeat = "countries in country">
+          {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+       </li>
+    </ol> 
+
+ 2).   <ol>
+       <li ng-repeat = "country in countries">
+          {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+       </li>
+    </ol> 
+
+ 3).   <ol>
+       <li ng-forEach = "country in countries">
+          {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+       </li>
+    </ol> 
+
+ 4). None of the above 
+ 
+Solution :
+option  [2]  is correct 
+
+Q. _____ is the key service which set the configuration of urls, 
+map them with the corresponding html page or ng-template, 
+and attach a controller with the same. 
+
+
+ 
+ 1). $route 
+
+ 2). $routeProvider 
+
+ 3). $Provider 
+
+ 4). $http  
+ 
+Solution :
+option  [2]  is correct 
+
+
+
+Q. Which of the following is the correct syntax of using angular  http service? 
+
+
+ 
+ 1). // Simple GET request example:
+ $http({
+   method: 'GET',
+   url: '/someUrl'
+ }).then(function successCallback() {
+     // this callback will be called asynchronously
+     // when the response is available
+   }, function errorCallback(response) {
+     // called asynchronously if an error occurs
+     // or server returns response with an error status.
+   }); 
+
+ 2). // Simple GET request example:
+ $http(
+   method: 'GET',
+   url: '/someUrl'
+ }).then(function successCallback(response) {
+     // this callback will be called asynchronously
+     // when the response is available
+   }, function errorCallback(response) {
+     // called asynchronously if an error occurs
+     // or server returns response with an error status.
+   ); 
+
+ 3). // Simple GET request example:
+ $http({
+   method= 'GET',
+   url: '/someUrl'
+ }).then(function successCallback(response) {
+     // this callback will be called asynchronously
+     // when the response is available
+   }, function errorCallback(response) {
+     // called asynchronously if an error occurs
+     // or server returns response with an error status.
+   }); 
+
+ 4). // Simple GET request example:
+ $http({
+   method: 'GET',
+   url: '/someUrl'
+ }).then(function successCallback(response) {
+     // this callback will be called asynchronously
+     // when the response is available
+   }, function errorCallback(response) {
+     // called asynchronously if an error occurs
+     // or server returns response with an error status.
+   }); 
+ 
+Solution :
+option  [4]  is correct  
+ 
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
