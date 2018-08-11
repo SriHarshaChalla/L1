@@ -1,0 +1,243 @@
+JSP Directives
+
+1. Which of the following is legal JSP syntax to print the value of i.
+A. <%int i = 1;%>
+<%= i; %>
+B. <%int i = 1;
+i; %>
+C. <%int i = 1%>
+<%= i %>
+D. <%int i = 1;%>
+<%= i %>
+
+2. The page directive is used to convey information about the page to JSP container. Which of these are legal syntax of page directive. Select the two correct statement
+
+A.<% page info=”test page” %>
+B.<%@ page info=”test page” session=”false”%>
+C.<%@ page session=”true” %>
+D.<%@ page isErrorPage=”errorPage.jsp” %>
+E.<%@ page isThreadSafe=true %>
+
+3. Which of the following are examples of JSP directive. Select the two correct answers.
+
+A. include
+B. exclude
+C. import
+D. taglibrary
+E. servlet
+F. page
+
+4. Which tag should be used to pass information from JSP to included JSP?
+A. Using <%jsp:page> tag
+B. Using <%jsp:param> tag
+C. Using <%jsp:import> tag
+D. Using <%jsp:useBean> tag
+
+5. Which of the following is true about <jsp:forward> action?
+
+A. The forward action terminates the action of the current page.
+B. The forward action forwards the request to another resource such as a static page, another JSP page, or a Java Servlet.
+C. Both of the above.
+D. None of the above.
+
+6. A JSP page needs to generate an XML file. Which attribute of page directive may be used to specify that the JSP page is generating an XML file.
+
+A. contentType
+B. generateXML
+C. type
+D. outputXML
+
+1. D	2. B,C	3. A,F	4. A	5. C	6. A	
+
+
+
+
+ 1.Which Directives are messages that tells the web container how to translate a JSP page into the corresponding servlet.
+--JSP Directives
+
+ 2.Which attribute is used to import class,interface or all the members of a package.It is similar to import keyword in java class or interface.
+
+--Import
+
+ 3.What is the syntax of JSP page directive
+--<%@ directive attribute="value" %>  
+
+ 4.Which directive is used to provide instructions to the container, where they pertain to the current JSP page?
+--Page directive
+
+ 5.What is the purpose of attribute buffer?
+-- Specifies a buffering model for the output stream.
+
+ 6.In taglib directive, which attribute value resolves to a location the container understands and the prefix attribute informs a container what bits of markup are custom actions.
+--uri attribute
+
+
+
+1. JSP directive is in the form
+
+   A)<%@directive and attribute = "value"}*%>
+
+2. Which directive allows to do import classes
+
+   A)page
+
+3.Which directive allow to insert a file into servlet classes at the time JSP file translated int a servlet   
+
+   A)Include
+
+4. Which directive intended to let JSP author define their own tags
+   A)Taglib
+
+5. Which directive applies to an entire JSP file and any of its static includes file
+
+   A)<%page%>
+
+6.)Which attribute is the only one that is allowed to appear multiple times
+
+   A)import
+
+
+
+
+Jsp Directives
+
+1.What will be the output of JSP code?
+${101%10}
+
+A. 1
+B. 10
+C. 1001
+D. 101%10
+
+2.Which JSTL tags would you use to iterate over a collection of objects?
+
+A. <x:forEach>
+B. <c:iterate>
+C. <c:forEach>
+D. <c:forTokens>
+
+
+3.Which is not valid examples of custom tag usage?
+
+A. <foo:bar/>
+B. <my:tag></my:tag>
+C. <mytag value="x/>
+D. <c:out value="x"/>
+
+4.Which of the following is not a valid implicit object in EL?
+
+A. header
+B. headerValues
+C. params
+D. paramValues
+
+5.Which Custom tag is used to dynamically add the contents from the provided URL to the current page at request time?
+A. <c:import>
+B. <c:include>
+C. <c:content>
+D. None of the above
+
+6.Output of the following code when query string is firstname=John&lastname=Doe?
+${param.firstname}
+${param.middlename}
+${param.lastname}
+${param.Values.lastname[0]}
+A. John Doe
+B. John Doe Doe
+C. John null Doe
+D. john null doe doe
+
+
+
+Answers:
+A C C C A B
+
+
+
+1.The directive that is used to define the user defined tags  -  taglib
+2.The attribute of the page directive that can be used any no.of times - import
+3.when <%@ include %> directive used, the include process is - static
+4.The attribute of the page directive that throws exception - errorPage
+5.The form of the JSP directive - <%@ directive {attribute = "value"}* %>
+6.The attributes of the page directive that takes the boolean values - session, autoFlush, isThreadSafe, isErrorPage, isELIgnored
+
+
+
+1.Which of the following is false about JSP Directive?
+	a.They have the scope of the entire file.
+	b.They produce an output to the client file
+	c.They are used to set global values like class declaration
+	d.They affect the over all structure of the servlet class
+
+
+2.Which of the is not a form of page directive?
+	a.include
+	b.forward
+	c.page
+	d.taglib
+
+3.Which statement stands true for include tag in JSP directives in version 2.2?
+	a.It can include both static and dynamic files
+	b.The container has mechanism to be notified of any changes in included files.
+	c.The included files can contain HTML tags within it
+	d.The files are included after translation
+
+4.Which JSP directive does content type attribute come under?
+	a.include
+	b.forward
+	c.page
+	d.taglib
+
+5.What is the use of contenttype attribute in page directive?
+	a.tell whether a page is error page or not
+	b.Specifies a character encoding
+	c.Gives info about page encoding
+	d.Speicifes the MIME type
+
+6.Which attribute gives boolean value?
+	a.isErrorPage
+	b.autoFlush
+	c.session
+	d.errorPage
+
+
+Answers- 1.b    2.b   3.b   4.c	   5.b,d      6.a,b,c,
+
+
+
+1.	Which of the following are the types of JSP Directives
+A)	Page
+B)	Taglib
+C)	include
+D)	extends
+Correct: A,B,C
+2.	JSP Directives are executed 
+A)	Before Translation	
+B)	Before Compilation
+C)	After Compilation
+D)	After Translation
+Correct: A
+3.	In JSP Directive if extends attribute is missing by Default the value is 
+A)	Servlet
+B)	HttpServlet
+C)	ServletContext	
+D)	HttpSession
+Correct: B
+4.	Which attribute specifies a JSP page that should process any exceptions thrown but not caught in the current page? 
+A)	The ErrorPage Attribute
+B)	The IsErrorPage Attribute
+C)	Both A & B
+D)	None of the Above
+Correct: A
+5.	Which of the following Directive attribute is not boolean
+A)	autoFlush
+B)	session
+C)	buffer
+D)	isThreadSafe
+Correct: C
+6.	Which of the following is true about JSP include Directive
+A)	Text of the include file is added to the JSP file
+B)	Included file can contain HTML tags.
+C)	Path name to the included file is always an absolute path
+D)	 Included file must not contain HTML tags.
+Correct: A,D
